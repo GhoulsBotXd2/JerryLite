@@ -290,7 +290,7 @@ async def play(_, message: Message):
     url = get_url(message)
 
     if audio:
-        if round(audio.duration / 60) > DURATION_LIMIT:
+        if round(audio.duration / 180) > DURATION_LIMIT:
             raise DurationLimitError(
                 f"💡 Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!"
             )
@@ -307,10 +307,8 @@ async def play(_, message: Message):
     [
         
        [
-            InlineKeyboardButton("📂 ꜱᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT}"),
-            InlineKeyboardButton("✨ ᴄʜᴀɴɴᴇʟ", url=f"t.me/{UPDATE}"),
-        ],[
-            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", url=f"{url}"),
+            InlineKeyboardButton("📡 ꜱᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT}"),
+            InlineKeyboardButton("💻 ᴄʜᴀɴɴᴇʟ", url=f"t.me/{UPDATE}"),
         ],[
             InlineKeyboardButton("🗑️ ᴄʟᴏsᴇ", callback_data="cls"),
         ],
@@ -350,10 +348,8 @@ async def play(_, message: Message):
     [
         
        [
-            InlineKeyboardButton("📂 ꜱᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT}"),
-            InlineKeyboardButton("✨ ᴄʜᴀɴɴᴇʟ", url=f"t.me/{UPDATE}"),
-        ],[
-            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", url=f"{url}"),
+            InlineKeyboardButton("📡 ꜱᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT}"),
+            InlineKeyboardButton("💻 ᴄʜᴀɴɴᴇʟ", url=f"t.me/{UPDATE}"),
         ],[
             InlineKeyboardButton("🗑️ ᴄʟᴏsᴇ", callback_data="cls"),
         ],
@@ -370,7 +366,7 @@ async def play(_, message: Message):
                 [[InlineKeyboardButton(text="YouTube 🎬", url=f"{url}")]]
             )
 
-        if (dur / 60) > DURATION_LIMIT:
+        if (dur / 180) > DURATION_LIMIT:
             await lel.edit(
                 f"💡 Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!"
             )
@@ -483,10 +479,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
     [
        [
-            InlineKeyboardButton("📂 ꜱᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT}"),
-            InlineKeyboardButton("✨ ᴄʜᴀɴɴᴇʟ", url=f"t.me/{UPDATE}"),
-        ],[
-            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", url=f"{url}"),
+            InlineKeyboardButton("📡 ꜱᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT}"),
+            InlineKeyboardButton("💻 ᴄʜᴀɴɴᴇʟ", url=f"t.me/{UPDATE}"),
         ],[
             InlineKeyboardButton("🗑️ ᴄʟᴏsᴇ", callback_data="cls"),
         ],
@@ -494,7 +488,7 @@ async def play(_, message: Message):
     ]
 )
 
-        if (dur / 60) > DURATION_LIMIT:
+        if (dur / 180) > DURATION_LIMIT:
             await lel.edit(
                 f"💡 Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!"
             )
@@ -573,7 +567,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
             photo="final.png",
-            caption="ꜱᴏɴɢ ɪɴ Qᴜᴇᴜᴇ #{}\n**📂 ᴛɪᴛʟᴇ:**[{}]({})\n\n👥 ᴀᴅᴅᴇᴅ ʙʏ: {}".format(
+            caption="ꜱᴏɴɢ ɪɴ Qᴜᴇᴜᴇ #{}\n**📡 ᴛɪᴛʟᴇ:**[{}]({})\n\n👥 ᴀᴅᴅᴇᴅ ʙʏ: {}".format(
                 position, title, url, message.from_user.mention()
             ),
         )
@@ -599,7 +593,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**📂 ᴛɪᴛʟᴇ**:[{}]({})\n\n👥 ᴀᴅᴅᴇᴅ ʙʏ:{}".format(
+            caption="**📡 ᴛɪᴛʟᴇ**:[{}]({})\n\n👥 ᴀᴅᴅᴇᴅ ʙʏ:{}".format(
                 title, url, message.from_user.mention()
             ),
         )
