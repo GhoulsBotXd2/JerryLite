@@ -25,7 +25,7 @@ async def home(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "📡 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATE}"),
+                        "📡 Chatting grp", url=f"https://t.me/the_chatting_hub"),
                     InlineKeyboardButton(
                         "☁️ ᴏᴛʜᴇʀs", callback_data="others")
                 ]
@@ -48,9 +48,9 @@ async def others(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🗯️ ʜᴇʀᴏᴋᴜ", url=f"https://heroku.com"),
+                        "🗯️ chatting grp", url=f"https://t.me/the_chatting_hub"),
                     InlineKeyboardButton(
-                        "🌐 ɢɪᴛʜᴜʙ", url=f"https://github.com/Itz-Zaid")
+                        "🌐 ɢɪᴛʜᴜʙ", url=f"https://github.com/orekixadi")
                 ],
                 [
                     InlineKeyboardButton(
@@ -101,7 +101,7 @@ async def repoinfo(_, query: CallbackQuery):
 
 ᴛʜɪs ʀᴇᴘᴏ ɪs ᴏɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ᴅᴇᴘʟᴏʏɪɴɢ ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ʙᴏᴛ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ғᴀᴄɪɴɢ ʜᴇʀᴏᴋᴜ ᴀᴄᴄᴏᴜɴᴛ ʙᴀɴɴɪɴɢ ᴘʀᴏʙᴇʟᴍ.
 
-🔗 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : https://github.com/ITZ-ZAID/Zaid-Vc-Player""",
+🔗 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : https://github.com/orekixadi/JerryLite""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
